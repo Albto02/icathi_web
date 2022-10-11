@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superposicionamiento</title>
+    <style>
+        body, html{
+            height: 100%;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+        }
+        div{
+            width: 400px;
+            height: 100px;
+            position: relative;
+        }
+        #verde{
+            background-color: green;
+            left: 2cm;
+            top: 2cm;
+            z-index: 30;
+        }
+        #rojo{
+            background-color: red;
+            left: 2.5cm;
+            z-index: 20;
+        }
+        #azul{
+            background-color: blue;
+            left: 3cm;
+            bottom: 2cm;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="verde">
+        <h2>titulo</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam eius quo facere illum.</p>
+    </div>
+    <div id="rojo"></div>
+    <div id="azul"></div>
+    
+</body>
+</html>
